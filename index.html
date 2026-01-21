@@ -717,6 +717,7 @@
   </p>
 </article>
 <article>
+<article>
   <h2>Vrijdag 16 januari 2026</h2>
 
   <h3>Daily Checkout – Sprint 6</h3>
@@ -757,6 +758,18 @@
     </li>
   </ol>
 
+  <h4>Wat heb ik technisch toegepast in mijn project?</h4>
+  <p>
+    In mijn project heb ik gebruikgemaakt van <strong>container queries</strong>
+    om componenten responsive te maken. In plaats van alleen te kijken naar de
+    schermgrootte, reageren onderdelen nu op de grootte van hun eigen container.
+  </p>
+  <p>
+    Dit heb ik toegepast bij onder andere de header, de vacature-slider en de popup.
+    Hierdoor werkt de layout beter op verschillende schermgroottes en blijft de
+    structuur overzichtelijk.
+  </p>
+
   <h4>Planning & Roadmap</h4>
   <p>
     Ik loop grotendeels op schema. Om volgende week de eindstreep te halen heb ik nodig:
@@ -771,9 +784,94 @@
   <ul>
     <li>Je hebt op basis van een User Test concrete verbeteringen doorgevoerd.</li>
     <li>Je hebt testresultaten gedocumenteerd in je Learning Journal.</li>
+    <li>Je hebt container queries toegepast om componenten responsive te maken.</li>
     <li>Je hebt interacties verbeterd op basis van gebruikersfeedback.</li>
   </ul>
 </article>
+<article>
+  <h2>Maandag 19 januari 2026</h2>
+
+  <h3>Daily Checkout – Code conventies & refactoring</h3>
+
+  <h4>Met welke code conventies heb ik nog moeite? Hoe komt dat?</h4>
+  <p>
+    Ik heb soms nog moeite met het consequent toepassen van code conventies,
+    vooral bij grotere bestanden. Dan vergeet ik soms om alles netjes te
+    groeperen of om dezelfde naamgeving overal door te voeren.
+  </p>
+  <p>
+    Dit komt vooral doordat ik tijdens het bouwen gefocust ben op
+    “het werkend krijgen” van de code. Achteraf moet ik dan nog
+    terug om de code op te schonen en consistenter te maken.
+  </p>
+
+  <h4>Welke code vond ik prettig lezen tijdens een code review?</h4>
+  <p>
+    Tijdens een code review vond ik code prettig lezen die duidelijk was
+    ingedeeld in logische blokken, met voldoende witruimte en duidelijke
+    comments. Ook consistente naamgeving van classes en variabelen
+    maakte de code makkelijker te begrijpen.
+  </p>
+  <p>
+    Ik merkte dat dit vaak code was waarin de structuur al vooraf goed
+    was doordacht, in plaats van achteraf aangepast.
+  </p>
+
+  <h4>Hoeveel tijd zou ik in een sprint moeten plannen voor refactoring?</h4>
+  <p>
+    Ik denk dat het realistisch is om tijdens een sprint ongeveer
+    <strong>20 tot 30 procent</strong> van mijn tijd te reserveren voor
+    refactoring. Zo blijft de code overzichtelijk en voorkom ik dat
+    kleine slordigheden zich opstapelen.
+  </p>
+  <p>
+    Door refactoring standaard mee te nemen in mijn planning,
+    wordt mijn code beter leesbaar en makkelijker om later aan te passen.
+  </p>
+</article>
+<article>
+  <h2>Woensdag 21 januari 2026</h2>
+
+  <h3>Daily Checkout – CSS Tricks</h3>
+
+  <p>
+    Vandaag heb ik gewerkt met één van de vijf CSS-tricks die we hebben besproken.
+    Ik heb specifiek de trick <strong>“Mobiele hoogte fixen met dvh”</strong>
+    toegepast en onderzocht in mijn project.
+  </p>
+
+  <h4>Probleem</h4>
+  <p>
+    Op mobiel gebruikte ik <code>height: 100vh;</code> voor grote elementen.
+    Hierdoor werd het element vaak te hoog, waardoor je onbedoeld moest scrollen.
+    Dit komt doordat mobiele browsers ruimte reserveren voor UI-elementen
+    zoals de adresbalk.
+  </p>
+
+  <h4>Oplossing</h4>
+  <p>
+    Ik heb dit opgelost door een fallback te gebruiken met <code>dvh</code>:
+  </p>
+
+  <pre>
+height: 100vh;
+height: 100dvh;
+  </pre>
+
+  <p>
+    <strong>Uitleg:</strong><br>
+    <code>dvh</code> (dynamic viewport height) houdt rekening met de dynamische
+    hoogte van de browser op mobiel, inclusief het verschijnen en verdwijnen
+    van de adresbalk.  
+    De fallback met <code>100vh</code> zorgt ervoor dat het ook werkt in oudere browsers.
+  </p>
+
+  <p>
+    Deze oplossing heb ik toegepast in mijn project en getest op mobiel.
+    Hierdoor klopt de hoogte beter en voelt de layout stabieler aan.
+  </p>
+</article>
+
 
 
   <p><a href="we love web.html">We Love Web</a></p>
