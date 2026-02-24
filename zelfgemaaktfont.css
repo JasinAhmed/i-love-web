@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'zelfgemaakte-font';
+  src: url('./fonts/zelfgemaakte-font.otf') format('opentype');
+  font-display: swap;
+}
+
+body {
+  background: rgb(255, 0, 0);
+}
+
+@media (min-width: 810px) {
+  body {
+    background: rgb(122, 227, 174);
+  }
+}
+
+@media (min-width: 1080px) {
+  body {
+    background: rgb(10, 255, 88);
+  }
+}
+
+h1 {
+    font-family: 'zelfgemaakte-font';
+    font-size: 200px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'zelfgemaakte-font';
+    font-size: 200px;
+    text-align: center;
+}
