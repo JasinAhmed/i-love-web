@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'zelfgemaakte-font';
-  src: url('./fonts/zelfgemaakte-font.otf') format('opentype');
+  font-family: "zelfgemaakte-font";
+  src: url("../fonts/zelfgemaakte-font.otf") format("opentype");
   font-display: swap;
 }
 
