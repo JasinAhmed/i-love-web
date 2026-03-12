@@ -920,7 +920,7 @@ height: 100dvh;</code></pre>
     </li>
     <li>
       <strong>Value:</strong> de inhoud die bij een key hoort, bijvoorbeeld
-      <code>"Ali"</code> of <code>20</code>. :contentReference[oaicite:4]{index=4}
+      <code>"Jasin"</code> of <code>20</code>. :contentReference[oaicite:4]{index=4}
     </li>
     <li>
       <strong>String:</strong> tekst tussen dubbele aanhalingstekens,
@@ -954,8 +954,8 @@ height: 100dvh;</code></pre>
   <ul>
     <li><strong>Object:</strong> het hele blok tussen <code>{ }</code>.</li>
     <li><strong>Keys:</strong> <code>"name"</code>, <code>"opleiding"</code>, <code>"leerjaar"</code>.</li>
-    <li><strong>Values:</strong> <code>"Ali"</code>, <code>"Frontend Development"</code>, <code>1</code>.</li>
-    <li><strong>String:</strong> <code>"Ali"</code> en <code>"Frontend Development"</code>.</li>
+    <li><strong>Values:</strong> <code>"Jasin"</code>, <code>"Frontend Development"</code>, <code>1</code>.</li>
+    <li><strong>String:</strong> <code>"Jasin"</code> en <code>"Frontend Development"</code>.</li>
     <li><strong>Number:</strong> <code>1</code>.</li>
     <li><strong>Boolean:</strong> <code>true</code>.</li>
     <li><strong>Array:</strong> <code>["HTML", "CSS", "JavaScript"]</code>.</li>
@@ -1038,7 +1038,270 @@ height: 100dvh;</code></pre>
   </ul>
 </article>
 
-    <p><a href="we love web.html">We Love Web</a></p>
-  </main>
+<article>
+  <h3>Maandag 9 maart 2026 – Checkout</h3>
+  <ul>
+    <li>
+      <strong>Waar leg jij de grens qua nette URL’s ontwerpen?</strong><br>
+      Ik vind een nette URL vooral kort, duidelijk en logisch. Dus geen rare tekens of te lange dingen erin.
+      Bijvoorbeeld <code>/student/Jasin</code> is netter dan <code>/page?id=123&amp;name=jasin</code>.
+    </li>
+
+    <li>
+      <strong>Wat heeft het driestappenplan te maken met server-side rendering en callbacks?</strong><br>
+      Het driestappenplan is eigenlijk dat je iets opbouwt in logische stappen.
+      Bij server-side rendering vraag je data op, verwerk je die en stuur je daarna een response terug.
+      Callbacks helpen daarbij omdat een functie pas wordt uitgevoerd als iets klaar is.
+    </li>
+
+    <li>
+      <strong>Welke van de drie manieren van routes aanmaken heb je al gebruikt?</strong><br>
+      Ik heb vooral routes gemaakt met <code>app.get()</code>.
+      Daarmee heb ik pagina’s en data opgehaald in mijn project.
+    </li>
+
+    <li>
+      <strong>Wat zou je in jouw project nog anders dan HTML als response kunnen sturen?</strong><br>
+      Ik zou ook JSON kunnen terugsturen.
+      Bijvoorbeeld als ik data uit een API wil laten zien of apart wil testen.
+    </li>
+
+    <li>
+      <strong>Wat moet een goede 404 pagina volgens jou bevatten?</strong><br>
+      Een goede 404 pagina moet duidelijk zeggen dat de pagina niet bestaat.
+      Ook moet er een link of knop op staan om terug te gaan naar home.
+      Het is ook fijn als die pagina in dezelfde stijl is als de rest van de website.
+    </li>
+
+    <li>
+      <strong>Welke bron ga je raadplegen om meer over regular expressions te leren?</strong><br>
+      Ik zou MDN gebruiken, omdat dat meestal duidelijk is.
+      Misschien ook W3Schools of een YouTube video als ik het nog niet goed snap.
+    </li>
+  </ul>
+</article>
+
+<article>
+  <h3>Rijk van Zanten en Directus</h3>
+
+  <p>
+    Rijk van Zanten is co-founder en CTO van Directus. Hij komt uit Overijssel
+    en woont nu in Brooklyn, New York. Naast zijn werk als CTO is hij ook muzikant
+    in Manhattan.
+  </p>
+
+  <p>
+    Hij begon ooit bij de HvA en geeft nu ook les in New York, onder andere bij
+    Parsons School of Design. Hij heeft daar ook een master gehaald. Zijn afstudeerproject
+    was Directus. Ook heeft hij gewerkt bij XXIX en stage gelopen bij zijn eigen bedrijf.
+    In 2017 verhuisde hij naar New York.
+  </p>
+
+  <p>
+    Directus is een platform waarmee developers veel vrijheid hebben om met data te werken.
+    Het werkt als een API en helpt bij het beheren van een datamodel en database. Voor elke
+    entiteit kan een nieuwe tabel en formulier worden gemaakt.
+  </p>
+
+  <p>
+    Directus wordt gebruikt door grote bedrijven zoals FOX, BMW en Mercedes. Het team bestaat
+    uit ongeveer 50 mensen. Het is source available. Bedrijven met meer dan 5 miljoen omzet
+    moeten betalen voor een commerciële licentie.
+  </p>
+
+  <p>
+    Directus heeft servers in Frankfurt, Ierland, Amerika, het Midden-Oosten en China.
+  </p>
+</article>
+
+<article>
+  <h3>Woensdag 9 maart 2026 – Learning Journal</h3>
+
+  <h4>Welke notatie gebruik jij om data op te halen uit Directus?</h4>
+  <p>
+    In mijn project haal ik data op uit Directus in JSON. JSON betekent
+    JavaScript Object Notation. Dat is een manier om data te structureren
+    met keys en values. Het lijkt een beetje op een JavaScript object.
+  </p>
+
+  <pre><code>{
+  "name": "Jasin",
+  "birthdate": "2005-01-01"
+}</code></pre>
+
+  <p>
+    In mijn server gebruik ik bijvoorbeeld een object om parameters mee te geven:
+  </p>
+
+  <pre><code>const params = {
+  fields: ['name', 'birthdate'],
+  sort: 'name'
+}</code></pre>
+
+  <p>
+    Dit betekent dat ik alleen de velden naam en geboortedatum ophaal
+    en dat de data gesorteerd wordt op naam.
+  </p>
+
+  <h4>Hoeveel experimenten met query parameters heb je gedaan?</h4>
+  <p>
+    Ik heb meerdere dingen geprobeerd met filters, zoals zoeken op naam
+    en bepalen welke velden ik wil ophalen. Bijvoorbeeld:
+  </p>
+
+  <pre><code>filter[name][_contains]=jasin
+fields=name,birthdate</code></pre>
+
+  <p>
+    Hiermee zoek ik naar mensen waarvan de naam “jasin” bevat en krijg ik
+    alleen naam en geboortedatum terug.
+  </p>
+
+  <h4>Hoeveel Liquid filters heb je al geprobeerd?</h4>
+  <p>
+    Ik heb een paar Liquid filters uitgeprobeerd zoals:
+  </p>
+
+  <ul>
+    <li><code>upcase</code> → maakt tekst hoofdletters</li>
+    <li><code>downcase</code> → maakt tekst kleine letters</li>
+    <li><code>truncate</code> → kort tekst in</li>
+  </ul>
+
+  <pre><code>{{ product.title | upcase }}
+{{ product.description | truncate: 10 }}</code></pre>
+
+  <p>
+    Er zijn meer dan 50 Liquid filters, dus ik moet er nog meer leren
+    en uitproberen in mijn project.
+  </p>
+</article>
+
+<article>
+  <h3>Woensdag 9 maart 2026 – Experimenten met Directus query parameters</h3>
+
+  <h4>Experiment 1 – Studenten sorteren op naam</h4>
+  <p>
+    In dit experiment wilde ik alle studenten ophalen en sorteren op naam.
+    De parameter <code>sort</code> zorgt ervoor dat de resultaten gesorteerd worden.
+  </p>
+
+  <pre><code>https://fdnd.directus.app/items/person/?sort=name</code></pre>
+
+  <h4>Experiment 2 – Namen die beginnen met D</h4>
+  <p>
+    Hier wilde ik alle studenten ophalen waarvan de naam begint met de letter D.
+    Hiervoor gebruik ik een filter met <code>_istarts_with</code>.
+    De "i" betekent dat het case insensitive is, dus hoofdletters maken niet uit.
+  </p>
+
+  <pre><code>https://fdnd.directus.app/items/person/?sort=name&amp;filter[name][_istarts_with]=d</code></pre>
+
+  <h4>Experiment 3 – Namen die beginnen met D of K</h4>
+  <p>
+    In dit experiment wilde ik studenten vinden waarvan de naam begint
+    met D of K. Hiervoor gebruik ik een OR-filter.
+  </p>
+
+  <pre><code>https://fdnd.directus.app/items/person?sort=name&amp;filter[_or][][name][_istarts_with]=d&amp;filter[_or][1][name][_istarts_with]=k</code></pre>
+
+  <h4>Experiment 4 – Alleen naam en geboortedatum van studenten met een birthdate</h4>
+  <p>
+    Hier wilde ik alleen de velden <code>name</code> en <code>birthdate</code> ophalen
+    van studenten die een birthdate hebben ingevuld. Zo krijg ik minder data terug
+    en alleen wat ik nodig heb.
+  </p>
+
+  <pre><code>https://fdnd.directus.app/items/person?fields=name,birthdate&amp;filter[birthdate][_nnull]=true</code></pre>
+</article>
+
+<article>
+  <h3>Woensdag 11 maart 2026 – Directus filters en Liquid</h3>
+
+  <h4>Data filters met Directus</h4>
+  <p>
+    Vandaag heb ik geleerd hoe je data kan filteren met Directus.
+    Bijvoorbeeld zoeken op naam of bepaalde letters.
+  </p>
+
+  <ul>
+    <li>Zoeken op naam met een filter.</li>
+    <li><code>_contains</code> zoekt naar bepaalde letters.</li>
+    <li><code>_icontains</code> is case insensitive, dus hoofdletters maken niet uit.</li>
+    <li><code>_contains</code> is case sensitive, dus hoofdletters maken wel uit.</li>
+  </ul>
+
+  <p>
+    Je kan ook bepalen welke velden je wil ophalen zodat je minder data terugkrijgt.
+  </p>
+
+  <pre><code>fields=name,birthdate</code></pre>
+
+  <p>
+    Zo haal je alleen de data op die je nodig hebt.
+  </p>
+
+  <h4>Express route</h4>
+  <pre><code>app.get('/', async (req, res) =&gt; {
+  const params = {
+    filter: {},
+    fields: ['name', 'birthdate'],
+    sort: 'name'
+  }
+})</code></pre>
+
+  <h4>Nodemon</h4>
+  <p>
+    Nodemon zorgt ervoor dat je server automatisch opnieuw start wanneer je code verandert.
+  </p>
+
+  <pre><code>npm install nodemon
+
+dev: nodemon server.js
+start: node server.js
+
+npm run dev</code></pre>
+
+  <h4>Liquid filters</h4>
+  <p>Zonder filter:</p>
+
+  <pre><code>{{ product.title }}</code></pre>
+
+  <p>Met filter:</p>
+
+  <pre><code>{{ product.title | upcase }}</code></pre>
+
+  <p>
+    Hiermee wordt de tekst in hoofdletters gezet.
+  </p>
+
+  <h4>truncate filter</h4>
+  <pre><code>{{ product.description | truncate: 10 }}</code></pre>
+
+  <p>
+    Hiermee wordt tekst ingekort tot een bepaald aantal tekens.
+  </p>
+</article>
+
+<article>
+  <h3>Bronnen</h3>
+  <ul>
+    <li><a href="https://directus.io/docs/guides/connect/query-parameters">Directus – Query Parameters</a></li>
+    <li><a href="https://directus.io/docs/api/items">Directus – Items API</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/JSON">MDN – JSON</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Introduction">MDN – Express / Node introductie</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL">MDN – Wat is een URL?</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions">MDN – Regular expressions</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404">MDN – 404 status code</a></li>
+    <li><a href="https://liquidjs.com/tutorials/intro-to-liquid.html">LiquidJS – Intro to Liquid</a></li>
+    <li><a href="https://liquidjs.com/filters/overview.html">LiquidJS – Filters overzicht</a></li>
+    <li><a href="https://liquidjs.com/filters/upcase.html">LiquidJS – upcase filter</a></li>
+    <li><a href="https://liquidjs.com/filters/downcase.html">LiquidJS – downcase filter</a></li>
+    <li><a href="https://liquidjs.com/filters/truncate.html">LiquidJS – truncate filter</a></li>
+    <li><a href="https://www.npmjs.com/package/nodemon">npm – nodemon</a></li>
+  </ul>
+</article>
+
+<p><a href="we love web.html">We Love Web</a></p>
 </body>
 </html>
