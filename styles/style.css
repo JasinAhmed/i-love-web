@@ -1,68 +1,47 @@
 :root {
-  /* Colors */
-  --bg: #fff;
-  --card-bg: #fff;
-  --text: #111;
+  --bg: white;
+  --card-bg: white;
+  --text: black;
   --text-light: #444;
   --accent: #0a3a8c;
   --border: #e5e5e5;
   --hover-bg: #f3f6ff;
-
-  /* Component-specific colors */
   --date-bg: #eaf0ff;
   --date-border: #cdd9ff;
   --code-bg: #f5f5f7;
 }
 
-/* Base */
 body {
   margin: 0;
   padding: 20px;
   max-width: 900px;
   margin-inline: auto;
-
   font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
   color: var(--text);
   background: var(--bg);
-
-  @media (max-width: 600px) {
-    padding: 16px;
-  }
 }
 
 h1 {
   margin-bottom: 24px;
   font-size: 2rem;
-
-  @media (max-width: 600px) {
-    font-size: 1.7rem;
-  }
 }
 
-/* Article cards */
 article {
   margin: 18px 0;
   padding: 20px;
-
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-
-  @media (max-width: 600px) {
-    padding: 16px;
-  }
 }
 
 article h2 {
   margin: 0 0 14px;
   display: inline-block;
   padding: 6px 12px;
-
   font-size: 1rem;
   font-weight: 600;
-
   background: var(--date-bg);
   border: 1px solid var(--date-border);
   border-radius: 20px;
@@ -71,9 +50,7 @@ article h2 {
 article h3 {
   margin: 16px 0 8px;
   padding-left: 8px;
-
   font-size: 1.05rem;
-
   border-left: 3px solid var(--accent);
 }
 
@@ -89,10 +66,8 @@ article li {
 
 article code {
   padding: 2px 6px;
-
   font-size: 0.9rem;
   font-family: Consolas, monospace;
-
   background: var(--code-bg);
   border: 1px solid var(--border);
   border-radius: 4px;
@@ -102,11 +77,9 @@ article img {
   width: 100%;
   height: auto;
   margin: 12px 0;
-
   border-radius: 8px;
 }
 
-/* Links */
 a {
   color: var(--text);
   text-decoration: underline;
@@ -115,4 +88,34 @@ a {
 
 a:hover {
   background: var(--hover-bg);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  article {
+    padding: 16px;
+  }
+}
+
+/* dark mode  */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: black;
+    --card-bg: black;
+    --text: white;
+    --text-light: #cccccc;
+    --accent: white;
+    --border: #222;
+    --hover-bg: #111;
+    --date-bg: black;
+    --date-border: white;
+    --code-bg: black;
+  }
 }
