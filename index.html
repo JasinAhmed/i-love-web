@@ -1879,6 +1879,197 @@ npm run dev</code></pre>
   </li>
 </ol>
 </article>
+
+    <!--        SEPTEMBER 2026         -->
+   
+    <section>
+      <h2>September 2026</h2>
+
+      <article>
+        <h3>Woensdag 2 september 2026</h3>
+        <h4>Daily Checkout – Data ophalen en countdown</h4>
+
+        <h5>Welke verschillen merk je tussen het ophalen van data in Node + Liquid en in Svelte + SvelteKit?</h5>
+        <p>
+          Bij Node + Liquid haalde ik de data aan de serverkant op en zette ik deze direct in de Liquid-template.
+          In SvelteKit wordt de data meestal via een <code>load</code>-functie opgehaald. Daarna wordt de data
+          doorgegeven aan de Svelte-pagina. Met Svelte kan de pagina automatisch worden bijgewerkt wanneer de
+          data of een waarde verandert. Dit maakt Svelte dynamischer dan de manier waarop ik eerder met Node
+          en Liquid werkte.
+        </p>
+
+        <h5>Waar liep je vast en hoe heb je dat opgelost?</h5>
+        <p>
+          Ik liep vast bij het gebruiken van de opgehaalde data in mijn Svelte-bestand en bij het maken van de
+          countdown. Ik heb dit opgelost door de data met <code>$props()</code> binnen te halen en
+          <code>$state</code> te gebruiken voor de uren, minuten en seconden. Met <code>onMount</code> en
+          <code>setInterval</code> wordt de countdown iedere seconde bijgewerkt. Door de documentatie te bekijken
+          en verschillende oplossingen te testen, kreeg ik de countdown uiteindelijk werkend.
+        </p>
+      </article>
+
+      <article>
+        <h3>Vrijdag 4 september 2026</h3>
+        <h4>Learning Journal – Feedback</h4>
+
+        <h5>1. Hoe bereid je een degelijke feedbacksessie voor?</h5>
+        <p>
+          Ik bereid een feedbacksessie voor door eerst te bepalen waarover ik feedback wil ontvangen. Daarna
+          verzamel ik mijn werk en controleer ik welke onderdelen nog niet duidelijk of niet helemaal af zijn.
+          Ook bedenk ik vooraf gerichte vragen. Hierdoor kan de ander mijn werk beter beoordelen en krijg ik
+          feedback waar ik echt iets aan heb.
+        </p>
+
+        <h5>2. Hoe geef je jouw feedback?</h5>
+        <p>
+          Ik geef mijn feedback op een duidelijke en respectvolle manier. Eerst benoem ik wat er goed gaat.
+          Daarna vertel ik wat er volgens mij beter kan en leg ik uit waarom. Ik probeer daarbij een concreet
+          voorbeeld of een mogelijke oplossing te geven. Zo blijft mijn feedback behulpzaam en weet de ander
+          wat hij of zij kan verbeteren.
+        </p>
+
+        <h5>3. Hoe verwerk je ontvangen feedback?</h5>
+        <p>
+          Ik luister goed naar de feedback en schrijf de belangrijkste punten op. Als iets niet duidelijk is,
+          stel ik extra vragen. Daarna bekijk ik welke aanpassingen nodig zijn en pas ik mijn werk aan. Als ik
+          klaar ben, controleer ik of ik de feedback goed heb verwerkt. Indien nodig vraag ik opnieuw om feedback.
+        </p>
+      </article>
+
+      <article>
+        <h3>Maandag 7 september 2026</h3>
+        <h4>Learning Journal – User stories en planning poker</h4>
+
+        <h5>1. Hoe helpt het schrijven van user stories je om vanuit de gebruiker te denken?</h5>
+        <p>
+          Door user stories te schrijven, denk ik niet alleen na over wat ik wil bouwen, maar vooral over wat
+          de gebruiker nodig heeft. In een user story beschrijf ik wie de gebruiker is, wat die persoon wil doen
+          en waarom dit belangrijk is. Hierdoor begrijp ik het doel van een functie beter en kan ik keuzes maken
+          die aansluiten bij de wensen en behoeften van de gebruiker.
+        </p>
+
+        <h5>2. Hoe werkte planning poker in jullie team: was er discussie en wat leer je daarvan?</h5>
+        <p>
+          Tijdens planning poker gaf ieder teamlid aan hoeveel werk een user story volgens hem zou kosten. Soms
+          kozen we verschillende aantallen punten. Daardoor ontstond er een discussie over de moeilijkheid en
+          grootte van een taak. We legden aan elkaar uit waarom we voor een bepaalde inschatting hadden gekozen.
+          Ik heb hiervan geleerd dat iedereen anders naar een taak kan kijken en dat overleg helpt om tot een
+          betere en realistischere planning te komen.
+        </p>
+
+        <h5>3. Wat neem je mee uit deze workshop voor de volgende sprint?</h5>
+        <p>
+          Voor de volgende sprint wil ik user stories duidelijker en meer vanuit de gebruiker schrijven. Ook wil
+          ik taken beter bespreken voordat we beginnen met ontwikkelen. Met planning poker kunnen we samen bepalen
+          hoeveel werk een taak waarschijnlijk kost. Hierdoor kunnen we de sprint beter plannen, de taken eerlijker
+          verdelen en mogelijke problemen eerder herkennen.
+        </p>
+      </article>
+
+      <article>
+        <h3>Maandag 14 september 2026</h3>
+        <h4>Learning Journal – SvelteKit en Directus</h4>
+
+        <h5>1. Wat zijn SvelteKit-layouts en hoe kun je die toepassen in een webproject?</h5>
+        <p>
+          Een SvelteKit-layout is een vaste indeling die op meerdere pagina's kan worden gebruikt. Een layout
+          wordt meestal gemaakt in een bestand met de naam <code>+layout.svelte</code>. Hierin kunnen onderdelen
+          staan die op iedere pagina terugkomen, zoals de navigatie, header en footer. Hierdoor hoef ik dezelfde
+          onderdelen niet op iedere pagina opnieuw te schrijven en blijft de structuur overzichtelijk.
+        </p>
+
+        <h5>2. Wat zijn componenten en hoe kun je die toepassen in een webproject?</h5>
+        <p>
+          Componenten zijn losse en herbruikbare onderdelen van een website, zoals een knop, navigatiebalk,
+          profielkaart of footer. In Svelte wordt een component in een eigen <code>.svelte</code>-bestand geplaatst.
+          Ik kan het component importeren en op meerdere pagina's gebruiken. Met props kan ik verschillende gegevens
+          meegeven. Componenten maken de code overzichtelijker, beter te onderhouden en makkelijker herbruikbaar.
+        </p>
+
+        <h5>3. Hoe werkt de Directus SDK anders dan een fetch?</h5>
+        <p>
+          Met <code>fetch</code> stuur ik zelf een verzoek naar een API-link. Daarbij moet ik zelf de juiste URL,
+          instellingen en headers toevoegen, het antwoord omzetten naar JSON en fouten afhandelen. De Directus SDK
+          is speciaal gemaakt om met Directus te werken. Met functies zoals <code>readItems</code> kan ik gegevens
+          uit een collectie ophalen. De SDK maakt de code vaak korter en duidelijker, terwijl <code>fetch</code> mij
+          meer directe controle over het verzoek geeft.
+        </p>
+      </article>
+
+      <article>
+        <h3>Woensdag 16 september 2026</h3>
+        <h4>Learning Journal – Codeconventies</h4>
+
+        <h5>1. Hoe verschilden jouw conventies van die van de FDND Agency?</h5>
+        <p>
+          Mijn eigen conventies kwamen voor een groot deel overeen met die van de FDND Agency. Ik gebruikte
+          duidelijke namen voor variabelen en classes, schreef comments in het Engels en probeerde mijn code
+          overzichtelijk te houden. Een verschil was dat ik tabs gebruikte voor het inspringen. Ook gebruikte ik
+          CSS-nesting, maar dit stond niet duidelijk beschreven in de conventies. Ik heb geleerd dat iedereen binnen
+          het team dezelfde afspraken moet volgen, zodat de code herkenbaar en overzichtelijk blijft.
+        </p>
+
+        <h5>2. Welke conventies zou je willen toevoegen aan die van de FDND Agency?</h5>
+        <p>
+          Ik zou een duidelijke conventie voor CSS-nesting willen toevoegen. Mijn voorstel is om maximaal drie
+          niveaus nesting te gebruiken, alleen te nesten wanneer elementen duidelijk bij elkaar horen en duidelijke
+          classnamen te gebruiken. Pseudo-classes zoals <code>:hover</code> kunnen bij het bijbehorende element worden
+          geplaatst. Hierdoor gebruikt iedereen CSS-nesting op dezelfde manier en blijft de code leesbaar.
+        </p>
+
+        <h5>Voorstel voor het GitHub-issue</h5>
+        <p><strong>Titel:</strong> Conventie toevoegen voor CSS-nesting</p>
+        <ul>
+          <li>Gebruik maximaal drie niveaus van nesting.</li>
+          <li>Gebruik nesting alleen wanneer elementen duidelijk bij elkaar horen.</li>
+          <li>Gebruik duidelijke en beschrijvende classnamen.</li>
+          <li>Vermijd onnodige nesting en onduidelijke afkortingen.</li>
+          <li>Houd pseudo-classes zoals <code>:hover</code> bij het bijbehorende element.</li>
+        </ul>
+
+        <h5>3. Wat waren de belangrijkste punten uit de kampvuursessie?</h5>
+        <p>
+          Tijdens de kampvuursessie hebben we besproken waarom codeconventies belangrijk zijn. Wanneer iedereen
+          dezelfde afspraken volgt, wordt de code makkelijker te lezen, te begrijpen en te onderhouden. Goede namen
+          voor variabelen, functies en classes moeten duidelijk maken wat de code doet. Ook is het belangrijk om
+          code netjes in te springen, herhaling te voorkomen en alleen comments toe te voegen als deze echt iets
+          uitleggen. Werken met branches, pull requests en code reviews helpt daarnaast om fouten te vinden en van
+          elkaar te leren.
+        </p>
+      </article>
+
+      <article>
+        <h3>Vrijdag 18 september 2026</h3>
+        <h4>Learning Journal – Sprintreflectie en Living Standards</h4>
+
+        <h5>1. Wat neem je mee uit deze sprint dat je direct wilt toepassen in de volgende?</h5>
+        <p>
+          Uit deze sprint neem ik mee dat ik vooraf beter moet nadenken over de structuur van mijn code. In de
+          volgende sprint wil ik eerder bepalen welke onderdelen ik als component kan maken en welke onderdelen in
+          een layout thuishoren. Ook wil ik user stories en taken vooraf duidelijker bespreken, de afgesproken
+          codeconventies volgen en eerder feedback vragen. Zo kan ik problemen sneller ontdekken en oplossen.
+        </p>
+
+        <h5>2. Wat neem je mee uit het Living Standards-artikel?</h5>
+        <p>
+          Uit het artikel over de nieuwe CSS Class Prefix Selector neem ik mee dat CSS zich voortdurend blijft
+          ontwikkelen. Met een selector zoals <code>.btn-*</code> zou je in de toekomst alle classes kunnen selecteren
+          die met <code>btn-</code> beginnen, zoals <code>.btn-primary</code>, <code>.btn-secondary</code> en
+          <code>.btn-danger</code>. Dit kan CSS korter en overzichtelijker maken, vooral bij grotere websites en
+          designsystemen.
+        </p>
+        <p>
+          De functie wordt op dit moment nog niet door browsers ondersteund en kan daarom nog niet veilig in een
+          echt project worden gebruikt. Ik heb hiervan geleerd dat ik nieuwe webtechnieken moet blijven volgen,
+          maar ook altijd de browserondersteuning moet controleren voordat ik ze toepas.
+        </p>
+        <p>
+          <a href="https://www.bram.us/2026/08/20/the-future-of-css-target-multiple-classes-with-the-class-prefix-selector/">
+            Bron: The Future of CSS – Class Prefix Selector
+          </a>
+        </p>
+      </article>
+    </section>
   </main>
 
   <p><a href="we love web.html">We Love Web</a></p>
